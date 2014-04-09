@@ -9,10 +9,10 @@ method = 2;
 fname = 'dep_weight_2.mat';
 
 % Load files
-load '../Data/test-score.txt';
+load '../Data/score.txt';
 
 % Load sparse data
-score = train_score;
+% score = train_score;
 [R_idx, C_idx] = find(V);
 
 % Data description

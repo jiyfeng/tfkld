@@ -3,16 +3,16 @@ function [weight] = computeWeight()
 % representation
 
 % Load data
-load 'dep_sparse.txt';
-V = spconvert(dep_sparse);
+load 'sparseform.txt';
+V = spconvert(sparseform);
 method = 2;
-fname = 'dep_weight_2.mat';
+fname = 'kld_weight.mat';
 
 % Load files
-load '../Data/test-score.txt';
+load 'score.txt';
 
 % Load sparse data
-score = train_score;
+% score = train_score;
 [R_idx, C_idx] = find(V);
 
 % Data description
